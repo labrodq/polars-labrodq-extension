@@ -1,0 +1,18 @@
+dataset: test_table
+checks:
+  - name: col1_not_null
+    type: not_null
+    column: col1
+    level: error
+
+  - name: col2_not_null
+    type: not_null
+    column: col2
+    level: error
+
+  - name: col3_not_too_sparse
+    type: max_null_ratio
+    column: col3
+    level: warn
+    params:
+      threshold: 0.2
