@@ -448,6 +448,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "mkdocs" },
     { name = "mkdocs-gen-files" },
     { name = "mkdocs-literate-nav" },
     { name = "mkdocs-material" },
@@ -465,6 +466,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocs-gen-files", specifier = ">=0.6.0" },
     { name = "mkdocs-literate-nav", specifier = ">=0.6.2" },
     { name = "mkdocs-material", specifier = ">=9.7.0" },
