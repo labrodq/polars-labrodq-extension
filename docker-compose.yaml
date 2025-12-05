@@ -1,0 +1,17 @@
+
+services:
+  qe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./src
+        target: /polars_labrodq_extension/src
+      - type: bind
+        source: ./pyproject.toml
+        target: /polars_labrodq_extension/pyproject.toml
+      - type: bind
+        source: ./uv.lock
+        target: /polars_labrodq_extension/uv.lock
+    command: sleep infinity

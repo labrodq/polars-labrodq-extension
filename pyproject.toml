@@ -1,0 +1,31 @@
+[project]
+name = "polars-labrodq-extension"
+version = "0.0.1"
+description = "Polars data quality extension"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  { name = "Nikolai Potapov", email = "test@example.com" }
+]
+
+dependencies = [
+    "polars>=1.33.0",
+    "pyyaml>=6.0.1",
+    "types-pyyaml>=6.0.12.20250402"
+]
+
+[project.urls]
+Homepage = "https://github.com/labrodq/polars-labrodq-extension"
+Repository = "https://github.com/labrodq/polars-labrodq-extension"
+Issues = "https://github.com/labrodq/polars-labrodq-extension/issues"
+
+[dependency-groups]
+dev = [
+    "mkdocs-gen-files>=0.6.0",
+    "mkdocs-literate-nav>=0.6.2",
+    "mkdocs-material>=9.7.0",
+    "mkdocs-section-index>=0.3.10",
+    "mkdocstrings>=1.0.0",
+    "mkdocstrings-python>=2.0.1",
+]
